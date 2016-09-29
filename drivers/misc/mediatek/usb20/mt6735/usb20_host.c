@@ -111,8 +111,6 @@ void mt_usb_set_vbus(struct musb *musb, int is_on)
 		#endif
 	#elif defined(LYCONFIG_COMB_CHARGER_IC_MTK_SM5701_SUPPORT)
         sm5701_boost_notification(1);
-	#elif defined(LYCONFIG_COMB_CHARGER_IC_MTK_SM5414_SUPPORT)
-        sm5414_boost_notification(1);
 	#elif defined(CONFIG_MTK_BQ24261_SUPPORT)
 		bq24261_set_en_boost(1);
 	#elif defined(CONFIG_MTK_BQ24296_SUPPORT)
@@ -157,8 +155,6 @@ void mt_usb_set_vbus(struct musb *musb, int is_on)
 		#endif
 	#elif defined(LYCONFIG_COMB_CHARGER_IC_MTK_SM5701_SUPPORT)
 	sm5701_boost_notification(0);
-	#elif defined(LYCONFIG_COMB_CHARGER_IC_MTK_SM5414_SUPPORT)
-	sm5414_boost_notification(0);	
 	#elif defined(CONFIG_MTK_BQ24261_SUPPORT)
 		bq24261_set_en_boost(0);
 	#elif defined(CONFIG_MTK_BQ24296_SUPPORT)
