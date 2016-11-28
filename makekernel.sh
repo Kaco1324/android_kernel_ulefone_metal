@@ -12,7 +12,7 @@ if [ ! -d "$TOOLSDIR" ]; then
   mkdir $TOOLSDIR
 fi
 make clean && make mrproper
-export CROSS_COMPILE=~/android/android-ndk-r12b/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-
+export CROSS_COMPILE=~/android/android-ndk-r13b/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-
 export ARCH=arm64
 make -j8 $DEFCONFIG
 make -j8
